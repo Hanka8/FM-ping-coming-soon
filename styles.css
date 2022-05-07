@@ -23,7 +23,7 @@
   width: 40%;
   margin: 5% auto;
   text-align: center;
-  max-height: 100vh;
+  height: 100vh;
   font-size: var(--fontSize);
 }
 
