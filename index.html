@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- My stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Ping coming soon page</title>
+</head>
+
+<body class="page">
+  <header class="header1">
+    <img class="logo" src="images/logo.svg" alt=".ping-logo">
+    <h1 class="heading">We are launching <span class="soon">soon!</span></h1>
+    <p class="headerText">Subscribe and get notified</p>
+  </header>
+  <main class=main1>
+    <div class="mainFlex">
+      <form id="email" class="email" action="index.html" method="post">
+        <input class="emailInput" type="text" name="e-mail" value="" placeholder="Your email adress...">
+      </form>
+      <button class="btn" type="button" name="notify me">Notify Me</button>
+    </div>
+    <p id="errorText" class="error hide"><em>Please provide a valid email adress</em></p>
+    <img class="ills" src="images/illustration-dashboard.png" alt=".dashboard-illustration">
+  </main>
+  <footer class="footer1">
+    <div class="footerLogos">
+      <button class="btnSocial" type="button" name="facebook">
+        <i class="fab fa-facebook-f"></i>
+      </button>
+      <button class="btnSocial" type="button" name="twitter">
+        <i class="fab fa-twitter"></i>
+      </button>
+      <button class="btnSocial" type="button" name="instagram">
+        <i class="fab fa-instagram"></i>
+      </button>
+    </div>
+    <p class=footerText>&copy; Copyright Ping. All rights reserved.</p>
+  </footer>
+
+<!-- Font awesome kit -->
+<script src="https://kit.fontawesome.com/e8be4dfb60.js" crossorigin="anonymous"></script>
+<!-- My JS -->
+<script src="app.js" charset="utf-8"></script>
+</body>
+</html>

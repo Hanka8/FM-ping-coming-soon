@@ -1,0 +1,203 @@
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --paleBlue: hsl(223, 100%, 88%);
+  --red: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --dark: hsl(209, 33%, 12%);
+  --fontSize: 1.25rem;
+  --fontWeight1: 300;
+  --fontWeight2: 600;
+  --fontWeight3: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  font-family: 'Libre Franklin', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  margin: 5% auto;
+  text-align: center;
+  max-height: 100vh;
+  font-size: var(--fontSize);
+}
+
+/* ______________
+### HEADER ###
+______________ */
+
+.logo {
+  margin-bottom: 8%;
+}
+
+.heading {
+  color: var(--gray);
+  font-weight: var(--fontWeight1);
+  font-size: 2.7rem;
+  margin-bottom: 4%;
+}
+
+.soon {
+  color: var(--dark);
+  font-weight: var(--fontWeight3);
+}
+
+.headerText {
+  margin-bottom: 9%;
+}
+
+/* ______________
+##### MAIN #####
+______________ */
+
+.main1 {
+  margin-bottom: 10%;
+}
+
+.mainFlex {
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 40%;
+  margin: 0 auto;
+}
+
+.email {
+  border-radius: 25px;
+  outline: none;
+  border: 1px solid hsla(0, 0%, 59%, 40%);
+  flex-basis: 60%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+::placeholder {
+  color: hsla(0, 0%, 59%, 40%);
+}
+
+/* *************************
+****** JS TOGGLES ******* */
+
+.error {
+  color: #b80600;
+  text-align: left;
+  font-size: 0.75rem;
+  margin-top: 2%;
+  margin-left: 3%;
+}
+
+.hide {
+  display: none;
+}
+
+.inputError {
+  border: 1px solid #b80600;
+}
+
+/* ****** JS TOGGLES *******
+************************* */
+
+.btn {
+  border-radius: 25px;
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  width: 40%;
+  flex-basis: 30%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  filter: drop-shadow(0 10px 15px var(--paleBlue));
+  cursor: pointer;
+}
+
+.emailInput {
+  border: none;
+  outline: none;
+  float: left;
+  margin-left: 5%;
+}
+
+.ills {
+  margin-top: 15%;
+  width: 100%;
+}
+
+/* ______________
+#### FOOTER ####
+______________ */
+
+.btnSocial {
+  border: 1px solid hsla(0, 0%, 59%, 40%);
+  border-radius: 50%;
+  color: var(--blue);
+  height: 30px;
+  width: 30px;
+  margin-left: 2%;
+  margin-right: 2%;
+  background-color: white;
+}
+
+.footerText {
+  color: var(--gray);
+  margin-top: 8%;
+  font-size: 0.75rem;
+}
+
+
+/* ========= MEDIA ========= */
+
+@media (max-width:820px) {
+  .page {
+    width: 90%;
+  }
+  .logo {
+    margin-top: 15%;
+    margin-bottom: 10%;
+    width: 20%;
+  }
+  .heading {
+    font-size: 1.5rem;
+
+  }
+  .headerText {
+    font-size: 0.75rem;
+  }
+  .mainFlex {
+    flex-wrap: wrap;
+  }
+  .email, .btn {
+    flex-basis: 90%;
+    margin: 2% auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+  .email {
+    border: 1px solid hsla(223, 100%, 88%, 70%);
+  }
+  ::placeholder {
+    color: hsla(223, 100%, 88%, 70%);
+  }
+  .ills {
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+  .footerText {
+    font-size: 0.5rem;
+    margin-bottom: 3rem;
+  }
+  .error {
+    color: #b80600;
+    text-align: left;
+    font-size: 0.75rem;
+    margin-top: 2%;
+    margin-left: 7%;
+  }
+  .inputError {
+    border: 1px solid #b80600;
+  }
+}
